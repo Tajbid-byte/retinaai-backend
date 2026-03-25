@@ -565,7 +565,7 @@ footer{
   <!-- API URL bar -->
   <div id="api-url-bar">
     <label>API ENDPOINT</label>
-    <input type="text" id="api-url" value="http://localhost:8000" placeholder="https://your-backend.onrender.com">
+    <input type="text" id="api-url" value="https://retinaai-backend.onrender.com" placeholder="https://your-backend.onrender.com">
     <button onclick="testAPI()">Test Connection</button>
   </div>
   <div class="err-box" id="err-box"></div>
@@ -808,7 +808,7 @@ footer{
 <script>
 // ─── CONFIG ───────────────────────────────────────────────────────────────
 // Change this to your Render/Railway URL after deploying the backend
-const DEFAULT_API = 'http://localhost:8000';
+const DEFAULT_API = 'https://retinaai-backend.onrender.com';
 function apiBase() { return (document.getElementById('api-url').value || DEFAULT_API).replace(/\/$/,''); }
 
 // ─── SCROLL REVEAL ────────────────────────────────────────────────────────
